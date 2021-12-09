@@ -54,11 +54,13 @@ text-indent: 3em;
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav ml-auto">
                 </ul>
-                <li><a href="na">Contact</a></li>
-                <li><a href="na">About</a></li>
+                <li><a href="Sitemap.md">Sitemap</a></li>
+                <li><a href="Phonecase.md">Phonecase</a></li>
                 </ul>
+            </div>
                 <li><a href="contact.md">Contact</a></li>
                 <li><a href="about.md">About</a></li>
+              </ul>
             </div>
         </nav>
         <h1>Portfolio</h1>
@@ -69,7 +71,23 @@ text-indent: 3em;
         <section id="contact"></section>
         <section id="about"></section>
     </main>
-    <embed src="Figmand.pdf" width="500" height="375">
+
+    <h2>My first project: Sitemap</h2>
+
+    <p>To view my first project you can click on the photo below!</p>
+    
+    <a href="Sitemap.md">
+    <img src="sitemappic.png" alt="Sitemap" width="460" height="345">
+    </a>
+
+        <h2>My second project: Phonecase Battery</h2>
+
+    <p>To view my second project you can click on the photo below!</p>
+    
+    <a href="Phonecase.md">
+    <img src="Phonecase.png" alt="Phonecase" width="460" height="345">
+    </a>
+
     <footer>
       <div class="footer-clean">
         <footer>
@@ -90,7 +108,6 @@ text-indent: 3em;
                     </div>
                 </div>
             </div>
-        </footer>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
@@ -99,11 +116,11 @@ text-indent: 3em;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"></script>
     <script>
         $("document").ready(() => {
-            $.get("items/experience_1.md").then((sData) => {
-                $("#section_1").append(marked(sData));
+            $.get("Sitemap.md").then((sData) => {
+                $("#Sitemap").append(marked(sData));
             });
-            $.get("items/experience_2.md").then((sData) => {
-                $("#section_2").append(marked(sData));
+            $.get("Phonecase.md").then((sData) => {
+                $("#Phonecase2").append(marked(sData));
             });
             $.get("contact.md").then((sData) => {
                 
