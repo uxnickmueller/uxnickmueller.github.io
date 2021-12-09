@@ -1,6 +1,43 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 
 
+h6{
+
+font-size: large;
+}
+
+DIV.container {
+        background: black;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  .fa:hover {
+    opacity: 0.9;
+  }
+  
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+
 .footer-clean {
     padding:50px 0;
     background-color:#fff;
@@ -20,6 +57,10 @@
     line-height:1.6;
     font-size:14px;
     margin-bottom:0;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
   }
   
   .footer-clean ul a {
