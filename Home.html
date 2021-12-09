@@ -3,21 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nicholas Mueller</title>
-
-    <nav class="menu">
-        <ul>
-          <li><a href="#"><Home class="html"></Home></a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{
+    --header-background-color: rgb(51, 54, 56);
+    --header-foreground-color: rgb(255, 241, 241);
+    --footer-background-color: rgb(37, 34, 34);
+    --footer-foreground-color: rgb(156, 143, 143);
+    --nav-background-color: rgb(165, 165, 184);
+    --nav-background-color: White;
+}
+header{
+    color: var(--header-foreground-color);
+    background: var(--header-background-color)  
+}
+nav.bg-dark{
+color:var(--nav--footer-foreground-color);
+background-color: #120909!important;}
+footer{
+background-color: rgb(173, 185, 180);
+}
+    </style>
 </head>
+<style>
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Bebas Neue', cursive;
+    }
+</style>
+<body>
+    <style>
+        body{
+            font-family: 'Barlow', sans-serif;
+            font-optical-sizing: 900;
+        }
+        p {
+text-indent: 3em;
+} 
+    </style>     
+      <style>
+      </style>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Nicholas Mueller</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav ml-auto">
+                </ul>
+                <li><a href="na">Contact</a></li>
+                <li><a href="na">About</a></li>
+                </ul>
+                <li><a href="contact.md">Contact</a></li>
+                <li><a href="about.md">About</a></li>
+            </div>
+        </nav>
+        <h1>Portfolio</h1>
+    </header>
+    <main>
+      <article id="current" class="container"></article>
+      <article id="items" class="container">  
+        <section id="contact"></section>
+        <section id="about"></section>
+    </main>
+    <embed src="Figmand.pdf" width="500" height="375">
+    <footer>
+      <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Socials:</h3>
+                        <ul>
+                            <li><a href="#"> 
 
-<body></body>
+                            </a></li>
+                        </ul>
+                    </div>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">uxnickmueller © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"></script>
+    <script>
+        $("document").ready(() => {
+            $.get("items/experience_1.md").then((sData) => {
+                $("#section_1").append(marked(sData));
+            });
+            $.get("items/experience_2.md").then((sData) => {
+                $("#section_2").append(marked(sData));
+            });
+            $.get("contact.md").then((sData) => {
+                
+            });
+            $.get("about.md").then((sData) => {
+                
+            });
+        });
+    </script>
 
-<header></header>
-
-<footer></footer>
-
+<script src="js/index.js" type="module"></script>
+</body>
+<br/>
 </html>
