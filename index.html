@@ -54,12 +54,12 @@ text-indent: 3em;
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav ml-auto">
                 </ul>
-                <li><a href="Sitemap.md">Sitemap</a></li>
-                <li><a href="Phonecase.md">Phonecase</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+                <li><a href="Phonecase.html">Phonecase</a></li>
                 </ul>
             </div>
-                <li><a href="contact.md">Contact</a></li>
-                <li><a href="Angle.md">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Angle.html">About</a></li>
               </ul>
             </div>
         </nav>
@@ -120,10 +120,10 @@ text-indent: 3em;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"></script>
     <script>
         $("document").ready(() => {
-            $.get("Sitemap.md").then((sData) => {
+            $.get("Sitemap.html").then((sData) => {
                 $("Sitemap").append(marked(sData));
             });
-            $.get("Phonecase.md").then((sData) => {
+            $.get("Phonecase.html").then((sData) => {
                 $("#Phonecase2").append(marked(sData));
             });
             $.get("contact.md").then((sData) => {
