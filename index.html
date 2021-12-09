@@ -118,22 +118,7 @@ text-indent: 3em;
         crossorigin="anonymous"></script>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"></script>
-    <script>
-        $("document").ready(() => {
-            $.get("Sitemap.html").then((sData) => {
-                $("Sitemap").append(marked(sData));
-            });
-            $.get("Phonecase.html").then((sData) => {
-                $("#Phonecase2").append(marked(sData));
-            });
-            $.get("contact.md").then((sData) => {
-                
-            });
-            $.get("about.md").then((sData) => {
-                
-            });
-        });
-    </script>
+
 
 <script src="js/index.js" type="module"></script>
 </body>
